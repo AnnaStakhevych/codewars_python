@@ -1,0 +1,9 @@
+def pythagorean_triple(integers):
+    integers.sort()
+    a = integers[0]
+    b = integers[1]
+    c = integers[2]
+    if (c*c != (a*a+b*b)):
+        return False 
+    else:
+        return True
