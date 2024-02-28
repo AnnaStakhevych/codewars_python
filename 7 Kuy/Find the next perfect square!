@@ -1,0 +1,7 @@
+def find_next_square(sq):
+    sqrt = sq ** 0.5
+    if sqrt.is_integer():
+        next_sqrt = int(sqrt) + 1
+        return next_sqrt ** 2
+    else:
+        return -1
