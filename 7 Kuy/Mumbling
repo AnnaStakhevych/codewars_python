@@ -1,0 +1,5 @@
+def accum(st):
+    result = []
+    for i, char in enumerate(st):
+        result.append(char.upper() + char.lower() * i)
+    return '-'.join(result)
