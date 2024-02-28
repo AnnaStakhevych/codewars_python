@@ -1,0 +1,7 @@
+def duplicate_count(text):
+    char_count = {}
+    for char in text:
+        char_lower = char.lower()
+        char_count[char_lower] = char_count.get(char_lower, 0) + 1
+    duplicates_count = sum(1 for count in char_count.values() if count > 1)
+    return duplicates_count
